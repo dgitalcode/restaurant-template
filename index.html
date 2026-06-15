@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lumière — An award-winning fine dining experience celebrating seasonal ingredients, masterful technique, and the art of hospitality.">
+  <meta name="keywords" content="fine dining, restaurant, luxury dining, Michelin star, gourmet, reservations">
+  <meta name="author" content="D-GITALCODE">
+  <meta name="theme-color" content="#111111">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lumière — Fine Dining Restaurant">
+  <meta property="og:description" content="Experience Michelin-caliber cuisine in an atmosphere of refined luxury.">
+  <meta property="og:image" content="assets/images/hero.jpg">
+  <meta property="og:url" content="https://lumiere-dining.com">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lumière — Fine Dining Restaurant">
+  <meta name="twitter:description" content="Experience Michelin-caliber cuisine in an atmosphere of refined luxury.">
+  <meta name="twitter:image" content="assets/images/hero.jpg">
+
+  <title>Lumière — Fine Dining Restaurant</title>
+
+  <!-- Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Lumière",
+    "description": "An award-winning fine dining experience celebrating seasonal ingredients and masterful technique.",
+    "image": "assets/images/hero.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "128 Madison Avenue",
+      "addressLocality": "New York",
+      "addressRegion": "NY",
+      "postalCode": "10016",
+      "addressCountry": "US"
+    },
+    "telephone": "+1-212-555-0198",
+    "email": "reservations@lumiere-dining.com",
+    "servesCuisine": "Contemporary French",
+    "priceRange": "$$$$",
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday"], "opens": "18:00", "closes": "22:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "17:30", "closes": "23:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "17:00", "closes": "21:30" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="header" role="banner">
+    <div class="container header__inner">
+      <!-- EDIT: Restaurant Name -->
+      <a href="#" class="header__logo" aria-label="Lumière Home">Lumi<span>ère</span></a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#menu" class="nav__link">Menu</a></li>
+          <li><a href="#gallery" class="nav__link">Gallery</a></li>
+          <li><a href="#reservation" class="nav__link">Reservations</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="#reservation" class="btn btn--primary header__cta">Reserve a Table</a>
+
+      <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation">
+    <a href="#about" class="mobile-nav__link">About</a>
+    <a href="#menu" class="mobile-nav__link">Menu</a>
+    <a href="#gallery" class="mobile-nav__link">Gallery</a>
+    <a href="#reservation" class="mobile-nav__link">Reservations</a>
+    <a href="#contact" class="mobile-nav__link">Contact</a>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ==================== 1. HERO SECTION ==================== -->
+    <section class="hero" id="hero" aria-label="Welcome">
+      <div class="hero__bg">
+        <!-- EDIT: Hero Image -->
+        <img src="assets/images/hero.jpg" alt="Signature wagyu dish beautifully plated in fine dining presentation" width="1920" height="1080" fetchpriority="high">
+      </div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <!-- EDIT: Hero Headline -->
+        <p class="hero__label">Fine Dining Experience</p>
+        <h1 class="hero__title">A Symphony of Flavor</h1>
+        <p class="hero__subtitle">Experience Michelin-caliber cuisine in an atmosphere of refined luxury</p>
+        <div class="hero__actions">
+          <a href="#reservation" class="btn btn--primary">Reserve a Table</a>
+          <a href="#menu" class="btn btn--outline">Discover Our Menu</a>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero__scroll-indicator"></div>
+      </div>
+    </section>
+
+    <!-- ==================== 2. ABOUT RESTAURANT ==================== -->
+    <section class="section section--cream" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="split-layout">
+          <div class="split-layout__media reveal">
+            <div class="about__image">
+              <!-- EDIT: About Image -->
+              <img src="assets/images/about.jpg" alt="Elegant interior of Lumière restaurant with ambient lighting" width="800" height="1000" loading="lazy">
+              <div class="about__image-badge">
+                <strong>Est. 2018</strong>
+                <span>Contemporary French</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="split-layout__content reveal reveal-delay-2">
+            <span class="section__label">Our Story</span>
+            <h2 class="section__title" id="about-title">A Legacy of Excellence</h2>
+            <div class="section-divider"></div>
+            <div class="about__text">
+              <!-- EDIT: Restaurant Story -->
+              <p>Founded in the heart of the city, Lumière was born from a singular vision: to create a dining experience that transcends the ordinary. Our founder, Chef Antoine Moreau, brought decades of experience from the world's most prestigious kitchens to craft a restaurant where every detail matters.</p>
+              <p>We believe that exceptional dining is an art form — one that begins with the finest seasonal ingredients, continues through meticulous preparation, and culminates in moments of pure gastronomic delight shared at your table.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Philosophy -->
+        <div class="philosophy-grid">
+          <article class="philosophy-card reveal">
+            <svg class="philosophy-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 22c-4-4-8-7.5-8-12a8 8 0 1116 0c0 4.5-4 8-8 12z"/><path d="M12 13a3 3 0 100-6 3 3 0 000 6z"/></svg>
+            <h3 class="philosophy-card__title">Farm to Table</h3>
+            <p class="philosophy-card__text">We partner with local artisans and sustainable farms to source the freshest seasonal ingredients.</p>
+          </article>
+          <article class="philosophy-card reveal reveal-delay-1">
+            <svg class="philosophy-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.5-1-2.5-2-4-.5 2-2 3-2 5a2 2 0 004 0z"/><path d="M12 22c-4-4-8-7.5-8-12a8 8 0 1116 0c0 4.5-4 8-8 12z"/></svg>
+            <h3 class="philosophy-card__title">Masterful Technique</h3>
+            <p class="philosophy-card__text">Every dish is crafted with precision, passion, and decades of culinary expertise.</p>
+          </article>
+          <article class="philosophy-card reveal reveal-delay-2">
+            <svg class="philosophy-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            <h3 class="philosophy-card__title">Warm Hospitality</h3>
+            <p class="philosophy-card__text">Our team delivers service that is attentive yet unobtrusive, making every guest feel truly special.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. SIGNATURE DISHES ==================== -->
+    <section class="section" id="signature" aria-labelledby="signature-title">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__label">Culinary Highlights</span>
+          <h2 class="section__title" id="signature-title">Signature Dishes</h2>
+          <p class="section__subtitle">Each plate tells a story of passion, precision, and the finest ingredients</p>
+          <div class="section-divider"></div>
+        </header>
+
+        <div class="dishes-grid">
+          <!-- EDIT: Signature Dishes -->
+          <article class="dish-card reveal">
+            <div class="dish-card__image">
+              <img src="assets/images/dish-wagyu.jpg" alt="Wagyu Beef Tenderloin with truffle jus" width="600" height="450" loading="lazy">
+              <span class="dish-card__tag">Chef's Selection</span>
+            </div>
+            <div class="dish-card__body">
+              <h3 class="dish-card__name">Wagyu Beef Tenderloin</h3>
+              <p class="dish-card__desc">A5 Japanese wagyu, truffle jus, roasted bone marrow, seasonal vegetables</p>
+              <p class="dish-card__price">$98</p>
+            </div>
+          </article>
+
+          <article class="dish-card reveal reveal-delay-1">
+            <div class="dish-card__image">
+              <img src="assets/images/dish-scallops.jpg" alt="Pan-Seared Scallops with cauliflower purée" width="600" height="450" loading="lazy">
+              <span class="dish-card__tag">Signature</span>
+            </div>
+            <div class="dish-card__body">
+              <h3 class="dish-card__name">Pan-Seared Scallops</h3>
+              <p class="dish-card__desc">Hokkaido scallops, cauliflower purée, caviar beurre blanc, micro herbs</p>
+              <p class="dish-card__price">$68</p>
+            </div>
+          </article>
+
+          <article class="dish-card reveal reveal-delay-2">
+            <div class="dish-card__image">
+              <img src="assets/images/dish-duck.jpg" alt="Duck Confit with cherry gastrique" width="600" height="450" loading="lazy">
+              <span class="dish-card__tag">Classic</span>
+            </div>
+            <div class="dish-card__body">
+              <h3 class="dish-card__name">Duck Confit</h3>
+              <p class="dish-card__desc">Slow-cooked duck leg, cherry gastrique, potato dauphinoise, haricots verts</p>
+              <p class="dish-card__price">$72</p>
+            </div>
+          </article>
+
+          <article class="dish-card reveal reveal-delay-3">
+            <div class="dish-card__image">
+              <img src="assets/images/dish-dessert.jpg" alt="Chocolate Soufflé with vanilla crème anglaise" width="600" height="450" loading="lazy">
+              <span class="dish-card__tag">Must Try</span>
+            </div>
+            <div class="dish-card__body">
+              <h3 class="dish-card__name">Chocolate Soufflé</h3>
+              <p class="dish-card__desc">Valrhona dark chocolate, vanilla crème anglaise, gold leaf, berry compote</p>
+              <p class="dish-card__price">$28</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. FULL MENU PREVIEW ==================== -->
+    <section class="section section--cream" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__label">Our Menu</span>
+          <h2 class="section__title" id="menu-title">Culinary Collection</h2>
+          <p class="section__subtitle">A curated selection of seasonal creations</p>
+          <div class="section-divider"></div>
+        </header>
+
+        <div class="menu-tabs reveal" role="tablist" aria-label="Menu categories">
+          <button class="menu-tab is-active" role="tab" aria-selected="true" data-tab="starters">Starters</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-tab="mains">Main Courses</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-tab="desserts">Desserts</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-tab="drinks">Drinks</button>
+        </div>
+
+        <!-- EDIT: Menu Items -->
+        <div class="menu-panel is-active reveal" id="menu-starters" role="tabpanel">
+          <div class="menu-item">
+            <div class="menu-item__info"><h3 class="menu-item__name">Foie Gras Terrine</h3><p class="menu-item__desc">Fig compote, brioche toast, Sauternes gelée</p></div>
+            <span class="menu-item__dots" aria-hidden="true"></span>
+            <span class="menu-item__price">$38</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info"><h3 class="menu-item__name">Oysters Rockefeller</h3><p class="menu-item__desc">Six fresh oysters, spinach, Pernod, hollandaise</p></div>
+            <span class="menu-item__dots" aria-hidden="true"></span>
+            <span class="menu-item__price">$42</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info"><h3 class="menu-item__name">Burrata &amp; Heirloom Tomatoes</h3><p class="menu-item__desc">Basil oil, aged balsamic, sourdough crisps</p></div>
+            <span class="menu-item__dots" aria-hidden="true"></span>
+            <span class="menu-item__price">$24</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info"><h3 class="menu-item__name">Lobster Bisque</h3><p class="menu-item__desc">Maine lobster, cognac cream, chive oil</p></div>
+            <span class="menu-item__dots" aria-hidden="true"></span>
+            <span class="menu-item__price">$32</span>
+          </div>
+        </div>
+
+        <div class="menu-panel" id="menu-mains" role="tabpanel">
+          <div class="menu-item">
+            <div class="menu-item__info"><h3 class="menu-item__name">Wagyu Beef Tenderloin</h3><p class="menu-item__desc">Truffle jus, bone marrow, seasonal vegetables</p></div>
+            <span class="menu-item__dots" aria-hidden="true"></span>
+            <span class="menu-item__price">$98</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info"><h3 class="menu-item__name">Pan-Seared Scallops</h3><p class="menu-item__desc">Cauliflower purée, caviar beurre blanc</p></div>
+            <span class="menu-item__dots" aria-hidden="true"></span>
+            <span class="menu-item__price">$68</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info"><h3 class="menu-item__name">Duck Confit</h3><p class="menu-item__desc">Cherry gastrique, potato dauphinoise</p></div>
+            <span class="menu-item__dots" aria-hidden="true"></span>
+            <span class="menu-item__price">$72</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info"><h3 class="menu-item__name">Rack of Lamb</h3><p class="menu-item__desc">Herb crust, ratatouille, rosemary jus</p></div>
+            <span class="menu-item__dots" aria-hidden="true"></span>
+            <span class="menu-item__price">$86</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info"><h3 class="menu-item__name">Wild Mushroom Risotto</h3><p class="menu-item__desc">Porcini, truffle oil, Parmigiano-Reggiano</p></div>
+            <span class="menu-item__dots" aria-hidden="true"></span>
+            <span class="menu-item__price">$48</span>
+          </div>
+        </div>
+
+        <div class="menu-panel" id="menu-desserts" role="tabpanel">
+          <div class="menu-item">
+            <div class="menu-item__info"><h3 class="menu-item__name">Chocolate Soufflé</h3><p class="menu-item__desc">Valrhona chocolate, vanilla crème anglaise</p></div>
+            <span class="menu-item__dots" aria-hidden="true"></span>
+            <span class="menu-item__price">$28</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info"><h3 class="menu-item__name">Crème Brûlée</h3><p class="menu-item__desc">Madagascar vanilla, seasonal berries</p></div>
+            <span class="menu-item__dots" aria-hidden="true"></span>
+            <span class="menu-item__price">$18</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info"><h3 class="menu-item__name">Tarte Tatin</h3><p class="menu-item__desc">Caramelized apple, Calvados ice cream</p></div>
+            <span class="menu-item__dots" aria-hidden="true"></span>
+            <span class="menu-item__price">$22</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info"><h3 class="menu-item__name">Cheese Selection</h3><p class="menu-item__desc">Artisan cheeses, honeycomb, walnut bread</p></div>
+            <span class="menu-item__dots" aria-hidden="true"></span>
+            <span class="menu-item__price">$32</span>
+          </div>
+        </div>
+
+        <div class="menu-panel" id="menu-drinks" role="tabpanel">
+          <div class="menu-item">
+            <div class="menu-item__info"><h3 class="menu-item__name">Champagne Dom Pérignon</h3><p class="menu-item__desc">2012 Vintage, 750ml</p></div>
+            <span class="menu-item__dots" aria-hidden="true"></span>
+            <span class="menu-item__price">$385</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info"><h3 class="menu-item__name">Bordeaux Château Margaux</h3><p class="menu-item__desc">2015, glass</p></div>
+            <span class="menu-item__dots" aria-hidden="true"></span>
+            <span class="menu-item__price">$95</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info"><h3 class="menu-item__name">Craft Cocktail — Lumière</h3><p class="menu-item__desc">Gin, elderflower, citrus, gold dust</p></div>
+            <span class="menu-item__dots" aria-hidden="true"></span>
+            <span class="menu-item__price">$24</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info"><h3 class="menu-item__name">Artisan Coffee</h3><p class="menu-item__desc">Single origin, tableside preparation</p></div>
+            <span class="menu-item__dots" aria-hidden="true"></span>
+            <span class="menu-item__price">$12</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info"><h3 class="menu-item__name">Sommelier Selection</h3><p class="menu-item__desc">Ask your server for today's pairings</p></div>
+            <span class="menu-item__dots" aria-hidden="true"></span>
+            <span class="menu-item__price">Varies</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. CHEF SHOWCASE ==================== -->
+    <section class="section section--dark" id="chef" aria-labelledby="chef-title">
+      <div class="container">
+        <div class="chef-showcase">
+          <div class="chef-showcase__image reveal">
+            <!-- EDIT: Chef Image -->
+            <img src="assets/images/chef.jpg" alt="Chef Antoine Moreau, Executive Chef and Founder of Lumière" width="600" height="800" loading="lazy">
+          </div>
+          <div class="chef-showcase__content reveal reveal-delay-2">
+            <span class="section__label">Meet the Chef</span>
+            <h2 class="section__title" id="chef-title">Chef Antoine Moreau</h2>
+            <p class="section__subtitle">Executive Chef &amp; Founder</p>
+            <blockquote class="chef-showcase__quote">Cooking is not about convenience. It is about creating memories that linger long after the last bite.</blockquote>
+            <p class="chef-showcase__bio">Trained under culinary legends in Paris and Tokyo, Chef Moreau brings a unique fusion of classical French technique and contemporary global influences. His philosophy centers on respecting ingredients while pushing creative boundaries.</p>
+            <div class="chef-awards">
+              <span class="chef-award">Michelin Star 2024</span>
+              <span class="chef-award">James Beard Nominee</span>
+              <span class="chef-award">World's 50 Best Discovery</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 6. GALLERY SECTION ==================== -->
+    <section class="section" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__label">Visual Journey</span>
+          <h2 class="section__title" id="gallery-title">Gallery</h2>
+          <p class="section__subtitle">A glimpse into the Lumière experience</p>
+          <div class="section-divider"></div>
+        </header>
+
+        <div class="gallery-masonry">
+          <!-- EDIT: Gallery Images -->
+          <figure class="gallery-item reveal">
+            <img src="assets/images/gallery-01.jpg" alt="Elegant dining room with ambient lighting" width="600" height="400" loading="lazy">
+            <div class="gallery-item__overlay"><svg class="gallery-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></div>
+          </figure>
+          <figure class="gallery-item reveal reveal-delay-1">
+            <img src="assets/images/gallery-02.jpg" alt="Chef plating a signature dish" width="600" height="500" loading="lazy">
+            <div class="gallery-item__overlay"><svg class="gallery-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></div>
+          </figure>
+          <figure class="gallery-item reveal reveal-delay-2">
+            <img src="assets/images/gallery-03.jpg" alt="Wine cellar with premium selection" width="600" height="450" loading="lazy">
+            <div class="gallery-item__overlay"><svg class="gallery-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></div>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/images/gallery-04.jpg" alt="Fresh seasonal ingredients" width="600" height="400" loading="lazy">
+            <div class="gallery-item__overlay"><svg class="gallery-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></div>
+          </figure>
+          <figure class="gallery-item reveal reveal-delay-1">
+            <img src="assets/images/gallery-05.jpg" alt="Private dining experience" width="600" height="500" loading="lazy">
+            <div class="gallery-item__overlay"><svg class="gallery-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></div>
+          </figure>
+          <figure class="gallery-item reveal reveal-delay-2">
+            <img src="assets/images/gallery-06.jpg" alt="Artfully presented dessert" width="600" height="400" loading="lazy">
+            <div class="gallery-item__overlay"><svg class="gallery-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></div>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/images/gallery-07.jpg" alt="Bar area with craft cocktails" width="600" height="450" loading="lazy">
+            <div class="gallery-item__overlay"><svg class="gallery-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></div>
+          </figure>
+          <figure class="gallery-item reveal reveal-delay-1">
+            <img src="assets/images/gallery-08.jpg" alt="Outdoor terrace dining at sunset" width="600" height="500" loading="lazy">
+            <div class="gallery-item__overlay"><svg class="gallery-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" aria-hidden="true" role="dialog" aria-label="Image gallery lightbox">
+      <button class="lightbox__close" aria-label="Close lightbox">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <button class="lightbox__prev" aria-label="Previous image">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <img class="lightbox__image" src="" alt="">
+      <button class="lightbox__next" aria-label="Next image">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+      <p class="lightbox__caption"></p>
+    </div>
+
+    <!-- ==================== 7. RESERVATION SECTION ==================== -->
+    <section class="section section--cream" id="reservation" aria-labelledby="reservation-title">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__label">Book Your Table</span>
+          <h2 class="section__title" id="reservation-title">Reservations</h2>
+          <p class="section__subtitle">We look forward to welcoming you</p>
+          <div class="section-divider"></div>
+        </header>
+
+        <div class="reservation-grid">
+          <div class="reservation-info reveal">
+            <!-- EDIT: Opening Hours -->
+            <div class="reservation-info__block">
+              <h3 class="reservation-info__title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                Opening Hours
+              </h3>
+              <ul class="hours-list">
+                <li class="is-closed"><span>Monday</span><span>Closed</span></li>
+                <li><span>Tuesday – Thursday</span><span>6:00 PM – 10:00 PM</span></li>
+                <li><span>Friday – Saturday</span><span>5:30 PM – 11:00 PM</span></li>
+                <li><span>Sunday</span><span>5:00 PM – 9:30 PM</span></li>
+              </ul>
+            </div>
+
+            <!-- EDIT: Contact Details -->
+            <div class="reservation-info__block">
+              <h3 class="reservation-info__title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                Contact
+              </h3>
+              <p><strong>Phone:</strong> <a href="tel:+12125550198">+1 (212) 555-0198</a></p>
+              <p><strong>Email:</strong> <a href="mailto:reservations@lumiere-dining.com">reservations@lumiere-dining.com</a></p>
+              <p><strong>Address:</strong> 128 Madison Avenue, New York, NY 10016</p>
+            </div>
+          </div>
+
+          <form class="reservation-form reveal reveal-delay-2" id="reservation-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required autocomplete="name" placeholder="John Smith">
+              </div>
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required autocomplete="email" placeholder="john@example.com">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone *</label>
+                <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="+1 (555) 000-0000">
+              </div>
+              <div class="form-group">
+                <label for="guests">Guests *</label>
+                <select id="guests" name="guests" required>
+                  <option value="">Select guests</option>
+                  <option value="1">1 Guest</option>
+                  <option value="2">2 Guests</option>
+                  <option value="3">3 Guests</option>
+                  <option value="4">4 Guests</option>
+                  <option value="5">5 Guests</option>
+                  <option value="6">6 Guests</option>
+                  <option value="7+">7+ Guests</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Date *</label>
+                <input type="date" id="date" name="date" required>
+              </div>
+              <div class="form-group">
+                <label for="time">Time *</label>
+                <select id="time" name="time" required>
+                  <option value="">Select time</option>
+                  <option value="17:00">5:00 PM</option>
+                  <option value="17:30">5:30 PM</option>
+                  <option value="18:00">6:00 PM</option>
+                  <option value="18:30">6:30 PM</option>
+                  <option value="19:00">7:00 PM</option>
+                  <option value="19:30">7:30 PM</option>
+                  <option value="20:00">8:00 PM</option>
+                  <option value="20:30">8:30 PM</option>
+                  <option value="21:00">9:00 PM</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="special-requests">Special Requests</label>
+              <textarea id="special-requests" name="special-requests" rows="3" placeholder="Allergies, celebrations, seating preferences..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--dark" style="width:100%">Request Reservation</button>
+            <div class="form-message" role="alert"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 8. TESTIMONIALS ==================== -->
+    <section class="section" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__label">Guest Experiences</span>
+          <h2 class="section__title" id="testimonials-title">What Our Guests Say</h2>
+          <div class="section-divider"></div>
+        </header>
+
+        <div class="testimonials-grid">
+          <!-- EDIT: Testimonials -->
+          <blockquote class="testimonial-card reveal">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-card__quote">"An absolutely transcendent dining experience. Every course was a masterpiece, and the service was impeccable without being intrusive."</p>
+            <footer><cite class="testimonial-card__author">Sarah Mitchell</cite><p class="testimonial-card__title">Food Critic, The Epicurean Review</p></footer>
+          </blockquote>
+          <blockquote class="testimonial-card reveal reveal-delay-1">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-card__quote">"Lumière has redefined fine dining in this city. The wagyu tenderloin alone is worth the visit, but the entire experience is unforgettable."</p>
+            <footer><cite class="testimonial-card__author">James Chen</cite><p class="testimonial-card__title">Michelin Guide Inspector</p></footer>
+          </blockquote>
+          <blockquote class="testimonial-card reveal reveal-delay-2">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-card__quote">"We celebrated our anniversary here and it exceeded every expectation. The attention to detail, from the amuse-bouche to the petit fours, was extraordinary."</p>
+            <footer><cite class="testimonial-card__author">Elena &amp; Marco Rossi</cite><p class="testimonial-card__title">Regular Guests</p></footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 9. AWARDS & RECOGNITION ==================== -->
+    <section class="section section--dark" id="awards" aria-labelledby="awards-title">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__label">Recognition</span>
+          <h2 class="section__title" id="awards-title">Awards &amp; Accolades</h2>
+          <div class="section-divider"></div>
+        </header>
+
+        <div class="awards-grid">
+          <!-- EDIT: Awards -->
+          <article class="award-card reveal"><p class="award-card__year">2024</p><h3 class="award-card__title">Michelin Star</h3><p class="award-card__org">Michelin Guide</p></article>
+          <article class="award-card reveal reveal-delay-1"><p class="award-card__year">2024</p><h3 class="award-card__title">Best Fine Dining</h3><p class="award-card__org">City Dining Awards</p></article>
+          <article class="award-card reveal reveal-delay-2"><p class="award-card__year">2023</p><h3 class="award-card__title">Wine Spectator Award</h3><p class="award-card__org">Wine Spectator</p></article>
+          <article class="award-card reveal reveal-delay-3"><p class="award-card__year">2023</p><h3 class="award-card__title">Top 50 Restaurants</h3><p class="award-card__org">World's 50 Best</p></article>
+          <article class="award-card reveal reveal-delay-4"><p class="award-card__year">2022</p><h3 class="award-card__title">Chef's Choice Award</h3><p class="award-card__org">James Beard Foundation</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 10. LOCATION SECTION ==================== -->
+    <section class="section section--cream" id="contact" aria-labelledby="location-title">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__label">Find Us</span>
+          <h2 class="section__title" id="location-title">Our Location</h2>
+          <div class="section-divider"></div>
+        </header>
+
+        <div class="location-grid">
+          <div class="location-details reveal">
+            <!-- EDIT: Location Details -->
+            <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> 128 Madison Avenue, New York, NY 10016</p>
+            <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> <a href="tel:+12125550198">+1 (212) 555-0198</a></p>
+            <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg> <a href="mailto:reservations@lumiere-dining.com">reservations@lumiere-dining.com</a></p>
+            <p style="margin-top:var(--space-lg)"><a href="#reservation" class="btn btn--ghost">Get Directions &amp; Reserve</a></p>
+          </div>
+          <div class="location-map reveal reveal-delay-2">
+            <!-- EDIT: Google Maps Embed URL -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-73.986657!3d40.7484409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU0LjQiTiA3M8KwNTknMTEuOSJX!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Lumière Restaurant location on Google Maps"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 11. NEWSLETTER ==================== -->
+    <section class="newsletter" id="newsletter" aria-labelledby="newsletter-title">
+      <div class="container reveal">
+        <h2 class="newsletter__title" id="newsletter-title">Join Our Inner Circle</h2>
+        <p class="newsletter__desc">Receive exclusive invitations to chef's table events, seasonal menu previews, and special occasion offers.</p>
+        <form class="newsletter__form" id="newsletter-form" novalidate>
+          <label for="newsletter-email" class="sr-only">Email address</label>
+          <input type="email" id="newsletter-email" class="newsletter__input" placeholder="Enter your email address" required>
+          <button type="submit" class="btn btn--primary">Subscribe</button>
+        </form>
+        <div class="form-message" role="alert" style="max-width:520px;margin:var(--space-md) auto 0"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== 12. FOOTER ==================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <!-- EDIT: Footer Brand -->
+          <p class="footer__brand">Lumi<span>ère</span></p>
+          <p class="footer__desc">An award-winning fine dining experience celebrating seasonal ingredients, masterful technique, and the art of hospitality.</p>
+        </div>
+        <div>
+          <h3 class="footer__heading">Quick Links</h3>
+          <ul class="footer__links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reservation">Reservations</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__heading">Follow Us</h3>
+          <!-- EDIT: Social Media Links -->
+          <div class="social-links">
+            <a href="https://instagram.com/lumiere.dining" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><path d="M17.5 6.5h.01"/></svg>
+            </a>
+            <a href="https://facebook.com/lumiere.dining" class="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="https://twitter.com/lumiere_dining" class="social-link" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+            </a>
+            <a href="https://tripadvisor.com/lumiere" class="social-link" aria-label="TripAdvisor" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="8.5" cy="14.5" r="3.5"/><circle cx="15.5" cy="14.5" r="3.5"/><path d="M12 4l-2 4h4l-2-4z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>Copyright © 2026 D-GITALCODE. All rights reserved.</p>
+        <nav class="footer__bottom-links" aria-label="Legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Careers</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

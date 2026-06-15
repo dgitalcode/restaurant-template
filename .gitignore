@@ -1,0 +1,31 @@
+# Restaurant Template — Git Ignore
+# Copyright © 2026 D-GITALCODE
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Temporary
+tmp/
+temp/
+.cache/
+
+# Qodo
+.qodo/
