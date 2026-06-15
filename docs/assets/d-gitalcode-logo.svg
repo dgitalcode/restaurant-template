@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" fill="none" role="img" aria-label="D-GITALCODE">
+  <rect width="320" height="64" rx="8" fill="#111111"/>
+  <text x="24" y="42" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="600" fill="#FFFFFF">D-GITAL</text>
+  <text x="178" y="42" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="600" fill="#C8A45D">CODE</text>
+  <rect x="24" y="50" width="40" height="2" fill="#C8A45D"/>
+</svg>
