@@ -27,6 +27,10 @@ tmp/
 temp/
 .cache/
 
+# Node (screenshot tooling)
+node_modules/
+package-lock.json
+
 # Qodo
 .qodo/
 .vercel

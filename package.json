@@ -1,0 +1,12 @@
+{
+  "name": "restaurant-template",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Lumière — Premium fine dining restaurant website template by D-GITALCODE",
+  "scripts": {
+    "screenshots": "node scripts/capture-screenshots.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.58.2"
+  }
+}

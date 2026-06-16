@@ -49,11 +49,11 @@
 <br />
 
 <p align="center">
-  <img src="docs/screenshots/cover.jpg" alt="Lumière Restaurant Template — Premium Fine Dining Website Cover" width="100%" />
+  <img src="docs/screenshots/cover.jpg" alt="Lumière Restaurant Template — D-GITALCODE Premium Product Cover" width="100%" />
 </p>
 
 <p align="center">
-  <sub><strong>Lumière</strong> — Where culinary art meets timeless digital elegance.</sub>
+  <sub><strong>Lumière</strong> by D-GITALCODE — Premium fine dining website template · Commercial ready</sub>
 </p>
 
 <br />
@@ -233,22 +233,38 @@ This restaurant template reflects the same standards we apply to every D-GITALCO
 
 ## 📸 Screenshots
 
-<p align="center"><strong>A visual tour of the Lumière experience</strong></p>
-
-### Cover
+<p align="center"><strong>Real captures from the live Lumière template — no stock imagery</strong></p>
 
 <p align="center">
-  <img src="docs/screenshots/cover.jpg" alt="Restaurant Template Cover" width="90%" />
+  <sub>All previews below are captured directly from the running website at <a href="https://restaurant-template-dgitalcode.vercel.app/" target="_blank" rel="noopener noreferrer">restaurant-template-dgitalcode.vercel.app</a></sub>
 </p>
+
+<br />
+
+### Product Cover
+
+<p align="center">
+  <img src="docs/screenshots/cover.jpg" alt="Lumière Restaurant Template — D-GITALCODE Premium Product Cover" width="100%" />
+</p>
+<p align="center"><sub>Premium product cover · D-GITALCODE branding · Real template mockups · Commercial presentation ready</sub></p>
 
 <br />
 
 ### Hero Section
 
 <p align="center">
-  <img src="docs/screenshots/hero-section.jpg" alt="Cinematic fullscreen hero with reservation CTA" width="90%" />
+  <img src="docs/screenshots/hero-section.jpg" alt="Lumière hero section — cinematic fullscreen with reservation CTA" width="90%" />
 </p>
 <p align="center"><sub>Fullscreen cinematic hero · Dual CTAs · Soft parallax · Premium typography</sub></p>
+
+<br />
+
+### About Section
+
+<p align="center">
+  <img src="docs/screenshots/about-section.jpg" alt="Lumière about section — brand story and philosophy cards" width="90%" />
+</p>
+<p align="center"><sub>Split editorial layout · Brand philosophy · Drop-cap storytelling</sub></p>
 
 <br />
 
@@ -256,12 +272,12 @@ This restaurant template reflects the same standards we apply to every D-GITALCO
   <tr>
     <td width="50%" align="center">
       <strong>Menu Section</strong><br /><br />
-      <img src="docs/screenshots/menu-section.jpg" alt="Premium menu with dish thumbnails" width="100%" />
+      <img src="docs/screenshots/menu-section.jpg" alt="Lumière menu section — tabbed categories with dish thumbnails" width="100%" />
       <br /><sub>Tabbed categories · Dish thumbnails · Elegant price layout</sub>
     </td>
     <td width="50%" align="center">
       <strong>Gallery Section</strong><br /><br />
-      <img src="docs/screenshots/gallery-section.jpg" alt="Masonry gallery with lightbox" width="100%" />
+      <img src="docs/screenshots/gallery-section.jpg" alt="Lumière gallery section — masonry grid with lightbox" width="100%" />
       <br /><sub>Masonry grid · Lightbox · Keyboard navigation</sub>
     </td>
   </tr>
@@ -273,16 +289,31 @@ This restaurant template reflects the same standards we apply to every D-GITALCO
   <tr>
     <td width="50%" align="center">
       <strong>Reservation Section</strong><br /><br />
-      <img src="docs/screenshots/reservation-section.jpg" alt="Reservation form and opening hours" width="100%" />
+      <img src="docs/screenshots/reservation-section.jpg" alt="Lumière reservation section — booking form and opening hours" width="100%" />
       <br /><sub>Booking form · Opening hours · Contact details</sub>
     </td>
     <td width="50%" align="center">
-      <strong>Mobile Version</strong><br /><br />
-      <img src="docs/screenshots/mobile-version.jpg" alt="Mobile responsive restaurant website" width="60%" />
-      <br /><sub>Mobile-first · Touch-friendly · Fully responsive</sub>
+      <strong>Contact Section</strong><br /><br />
+      <img src="docs/screenshots/contact-section.jpg" alt="Lumière contact section — location map and details" width="100%" />
+      <br /><sub>Google Maps embed · Address · Hours &amp; contact info</sub>
     </td>
   </tr>
 </table>
+
+<br />
+
+### Mobile View
+
+<p align="center">
+  <img src="docs/screenshots/mobile-version.jpg" alt="Lumière mobile responsive view — hero on smartphone" width="40%" />
+</p>
+<p align="center"><sub>Mobile-first · Touch-friendly · Fully responsive at 390px viewport</sub></p>
+
+<br />
+
+<p align="center">
+  <sub>To regenerate screenshots locally: <code>npm run screenshots</code> (requires Google Chrome)</sub>
+</p>
 
 ---
 
@@ -465,13 +496,19 @@ restaurant-template/
 │   ├── CUSTOMIZATION.md          # Extended customization guide
 │   ├── assets/
 │   │   └── d-gitalcode-logo.svg  # Brand logo
-│   └── screenshots/              # README & marketing screenshots
-│       ├── cover.jpg
+│   └── screenshots/              # Real website captures & product cover
+│       ├── cover.jpg             # Premium D-GITALCODE product cover
 │       ├── hero-section.jpg
+│       ├── about-section.jpg
 │       ├── menu-section.jpg
 │       ├── gallery-section.jpg
 │       ├── reservation-section.jpg
+│       ├── contact-section.jpg
 │       └── mobile-version.jpg
+│
+├── 📂 scripts/
+│   ├── capture-screenshots.mjs   # Automated screenshot capture
+│   └── cover-template.html       # Product cover layout template
 │
 └── 📂 screenshots/               # Capture guide for marketplace listings
     └── README.md
