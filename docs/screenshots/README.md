@@ -20,7 +20,7 @@ npm install
 npm run screenshots
 ```
 
-Requires Google Chrome installed locally. The script starts a temporary server, captures each section from the running template, then composes the product cover from real screenshots.
+Requires Google Chrome or Playwright Chromium. Captures use **headless Playwright viewport clips** — website content only, no browser address bar, tabs, or chrome. The product cover composes real screenshots in chrome-free content panels.
 
 ---
 

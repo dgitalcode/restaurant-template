@@ -233,10 +233,10 @@ This restaurant template reflects the same standards we apply to every D-GITALCO
 
 ## 📸 Screenshots
 
-<p align="center"><strong>Real captures from the live Lumière template — no stock imagery</strong></p>
+<p align="center"><strong>Real headless captures from the live Lumière template — website content only</strong></p>
 
 <p align="center">
-  <sub>All previews below are captured directly from the running website at <a href="https://restaurant-template-dgitalcode.vercel.app/" target="_blank" rel="noopener noreferrer">restaurant-template-dgitalcode.vercel.app</a></sub>
+  <sub>All previews are captured directly from the running website · No stock imagery · No browser chrome · <a href="https://restaurant-template-dgitalcode.vercel.app/" target="_blank" rel="noopener noreferrer">restaurant-template-dgitalcode.vercel.app</a></sub>
 </p>
 
 <br />
@@ -246,7 +246,7 @@ This restaurant template reflects the same standards we apply to every D-GITALCO
 <p align="center">
   <img src="docs/screenshots/cover.jpg" alt="Lumière Restaurant Template — D-GITALCODE Premium Product Cover" width="100%" />
 </p>
-<p align="center"><sub>Premium product cover · D-GITALCODE branding · Real template mockups · Commercial presentation ready</sub></p>
+<p align="center"><sub>Premium product cover · D-GITALCODE branding · Chrome-free mockups · Commercial presentation ready</sub></p>
 
 <br />
 
